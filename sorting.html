@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">sort</button>
+<p id="display"></p>
+<script>
+var points = [15,89,56,73,2,1];
+document.getElementById("display").innerHTML = points;    
+function myFunction() {
+    points.sort(function(a, b){
+return a - b
+});
+    document.getElementById("display").innerHTML = points;
+}
+</script>
+
+</body>
+</html>
